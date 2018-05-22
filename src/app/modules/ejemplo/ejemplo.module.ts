@@ -8,11 +8,11 @@ import { EjemploComponent } from './ejemplo.component';
 
 @NgModule({
   declarations: [
-    EjemploComponent,
-    FormsModule
+    EjemploComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     EjemploRoutingModule
   ]
 })
