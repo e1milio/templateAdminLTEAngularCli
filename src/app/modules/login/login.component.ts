@@ -9,6 +9,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   public username:string;
+  public password:string;
 
   constructor(
     private _route: ActivatedRoute,
@@ -16,6 +17,8 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    localStorage.removeItem('username');
+    localStorage.clear();
   }
 
   login(){
