@@ -6,7 +6,7 @@
             <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a [routerLink]="['/inicio']" class="nav-link">Home</a>
+            <a [routerLink]="['/dashboard/dashboard']" class="nav-link">Home</a>
           </li>
           <!--
           <li class="nav-item d-none d-sm-inline-block">
@@ -145,7 +145,7 @@
               <img src="assets/images/user.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block">Nombre de Usuario</a>
+              <a href="#" class="d-block">Nombre de Usuario</a> 
             </div>
           </div>
     
@@ -154,8 +154,8 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
               <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
-              <li class="nav-item has-treeview" [routerLinkActive]="['menu-open']">
-                <a href="#" class="nav-link">
+              <li class="nav-item has-treeview" [class.menu-open]="_router.url.startsWith('/dashboard')">
+                <a href="#" class="nav-link" [class.active]="_router.url.startsWith('/dashboard')">
                   <i class="nav-icon fa fa-dashboard"></i>
                   <p>
                     Dashboard
@@ -164,7 +164,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a [routerLink]="['/inicio']" class="nav-link" [routerLinkActive]="['active']">
+                    <a [routerLink]="['/dashboard/dashboard']" class="nav-link" [routerLinkActive]="['active']">
                       <i class="fa fa-circle-o nav-icon"></i>
                       <p>Dashboard v1</p>
                     </a>
@@ -195,8 +195,8 @@
                   </p>
                 </a>
               </li>-->
-              <li class="nav-item has-treeview" [routerLinkActive]="['menu-open']">
-                <a href="#" class="nav-link">
+              <li class="nav-item has-treeview" [class.menu-open]="_router.url.startsWith('/ejemplo')">
+                <a href="#" class="nav-link" [class.active]="_router.url.startsWith('/ejemplo')">
                   <i class="nav-icon fa fa-pie-chart"></i>
                   <p>
                     Ejemplo
@@ -205,7 +205,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a [routerLink]="['/ejemplo']" class="nav-link" [routerLinkActive]="['active']">
+                    <a [routerLink]="['/ejemplo/ejemplo']" class="nav-link" [routerLinkActive]="['active']">
                       <i class="fa fa-circle-o nav-icon"></i>
                       <p>Ejemplo</p>
                     </a>

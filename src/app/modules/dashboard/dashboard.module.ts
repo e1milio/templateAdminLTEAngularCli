@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { InicioRoutingModule } from './inicio-routing.module';
-import { InicioComponent } from './inicio.component';
+import { DashboardRoutingModule } from './dashboard-routing.module';
+import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
   declarations: [
-    InicioComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule,
-    InicioRoutingModule,
+    DashboardRoutingModule,
     FormsModule
   ]
 })
-export class InicioModule { }
+export class DashboardModule { }

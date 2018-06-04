@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-content',
@@ -9,7 +10,7 @@ export class MainContentComponent implements OnInit {
 
   public titulo:string;
 
-  constructor() {
+  constructor(private _router: Router) {
 
     this.titulo = "";
 

@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     console.log("this.username: " + this.username);
     localStorage.setItem('username',this.username);
     console.log(localStorage.getItem('username'));
-    this._router.navigate(['/inicio']);
+    this._router.navigate(['/dashboard/dashboard']);
   }
 
 }

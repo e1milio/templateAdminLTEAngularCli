@@ -5,9 +5,9 @@ import { LayoutComponent } from "./layout.component";
 
 const routes: Routes = [
   { path: '', component: LayoutComponent, children:[
-    { path: '', redirectTo: 'inicio', pathMatch: 'full'},
-    { path: 'inicio', loadChildren: '../inicio/inicio.module#InicioModule' },
-    { path: 'ejemplo', loadChildren: '../ejemplo/ejemplo.module#EjemploModule' }
+    { path: '', redirectTo: 'dashboard/dashboard', pathMatch: 'full'},
+    { path: 'dashboard/dashboard', loadChildren: '../dashboard/dashboard.module#DashboardModule' },
+    { path: 'ejemplo/ejemplo', loadChildren: '../ejemplo/ejemplo.module#EjemploModule' }
   ]}
 ];
 
