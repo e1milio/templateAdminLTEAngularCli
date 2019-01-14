@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
+/* Routes */
 import { AppRoutingModule } from './app-routing.module';
+
+/* Components */
 import { AppComponent } from './app.component';
 
-import { AuthGuard } from './services/auth.guard';
+/* Guards */
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -13,8 +16,7 @@ import { AuthGuard } from './services/auth.guard';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
