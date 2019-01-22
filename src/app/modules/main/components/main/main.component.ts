@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $;
 
 @Component({
   selector: 'app-main',
@@ -10,6 +11,9 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    $('.sidebar-menu').tree();
+    
   }
 
 }
