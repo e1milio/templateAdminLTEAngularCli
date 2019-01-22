@@ -8,9 +8,15 @@ declare var $;
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  public layout:any;
+
+  constructor() { 
+    this.layout = $('body').data('lte.layout');
+  }
 
   ngOnInit() {
+
+    this.layout.activate();
 
     $('.sidebar-menu').tree();
     
