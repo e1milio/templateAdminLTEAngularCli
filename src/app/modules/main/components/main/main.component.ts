@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare var $;
 
 @Component({
   selector: 'app-main',
@@ -8,18 +7,9 @@ declare var $;
 })
 export class MainComponent implements OnInit {
 
-  public layout:any;
-
-  constructor() { 
-    this.layout = $('body').data('lte.layout');
-  }
+  constructor() { }
 
   ngOnInit() {
-
-    this.layout.activate();
-
-    $('.sidebar-menu').tree();
-    
   }
 
 }
