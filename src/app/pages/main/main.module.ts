@@ -7,7 +7,9 @@ import { MainRoutingModule } from './main-routing.module';
 /* Components */
 import { MainComponent } from './main.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
-import { MainContentComponent } from './main-content/main-content.component';
+import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
+import { MainSidebarControlComponent } from './main-sidebar-control/main-sidebar-control.component';
+import { MainContentComponent } from './main-content/main-content.component'; 
 import { MainFooterComponent } from './main-footer/main-footer.component';
 
 /* Pages Components */
@@ -18,6 +20,8 @@ import { EjemploComponent } from './pages/ejemplo/ejemplo.component';
   declarations: [
     MainComponent,
     MainHeaderComponent,
+    MainSidebarComponent,
+    MainSidebarControlComponent,
     MainContentComponent,
     MainFooterComponent,
     InicioComponent,

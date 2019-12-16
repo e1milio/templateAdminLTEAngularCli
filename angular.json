@@ -28,9 +28,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+              "adminlte/plugins/fontawesome-free/css/all.min.css",
+              "adminlte/dist/css/adminlte.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "adminlte/plugins/jquery/jquery.min.js",
+              "adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+              "adminlte/dist/js/adminlte.min.js"
+            ]
           },
           "configurations": {
             "production": {
