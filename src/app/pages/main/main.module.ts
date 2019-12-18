@@ -14,7 +14,7 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 
 /* Pages Components */
 import { InicioComponent } from './pages/inicio/inicio.component';
-import { EjemploComponent } from './pages/ejemplo/ejemplo.component';
+import { BlankComponent } from './pages/blank/blank.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { EjemploComponent } from './pages/ejemplo/ejemplo.component';
     MainContentComponent,
     MainFooterComponent,
     InicioComponent,
-    EjemploComponent,
+    BlankComponent,
   ],
   imports: [
     CommonModule,

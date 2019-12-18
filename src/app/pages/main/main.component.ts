@@ -12,13 +12,13 @@ export class MainComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     //Agrego clases al body del template adminlte
-    //this.renderer.addClass(document.body, 'hold-transition');
+    this.renderer.addClass(document.body, 'hold-transition');
     this.renderer.addClass(document.body, 'sidebar-mini');
   }
 
   ngOnDestroy() {
     //Remuevo las clases del body
-    //this.renderer.removeClass(document.body, 'hold-transition');
+    this.renderer.removeClass(document.body, 'hold-transition');
     this.renderer.removeClass(document.body, 'sidebar-mini');
   }
 

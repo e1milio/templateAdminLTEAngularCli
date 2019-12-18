@@ -29,8 +29,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css",
               "adminlte/plugins/fontawesome-free/css/all.min.css",
+              "adminlte/plugins/ionicons/2.0.1/css/ionicons.min.css",
+              "adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css",
               "adminlte/dist/css/adminlte.min.css"
             ],
             "scripts": [

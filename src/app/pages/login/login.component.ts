@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     //Agrego clases al body del template adminlte
-    //this.renderer.addClass(document.body, 'hold-transition');
+    this.renderer.addClass(document.body, 'hold-transition');
     this.renderer.addClass(document.body, 'login-page');
 
     localStorage.removeItem('username');
@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     //Remuevo las clases del login
-    //this.renderer.removeClass(document.body, 'hold-transition');
+    this.renderer.removeClass(document.body, 'hold-transition');
     this.renderer.removeClass(document.body, 'login-page');
   }
 
