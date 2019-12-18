@@ -29,18 +29,15 @@
             ],
             "styles": [
               "src/styles.css",
-              "bower_components/bootstrap/dist/css/bootstrap.min.css",
-              "bower_components/font-awesome/css/font-awesome.min.css",
-              "bower_components/Ionicons/css/ionicons.min.css",
-              "bower_components/admin-lte/dist/css/AdminLTE.min.css",
-              "bower_components/admin-lte/dist/css/skins/_all-skins.min.css"
+              "adminlte/plugins/fontawesome-free/css/all.min.css",
+              "adminlte/plugins/ionicons/2.0.1/css/ionicons.min.css",
+              "adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+              "adminlte/dist/css/adminlte.min.css"
             ],
             "scripts": [
-              "bower_components/jquery/dist/jquery.min.js",
-              "bower_components/bootstrap/dist/js/bootstrap.min.js",
-              "bower_components/jquery-slimscroll/jquery.slimscroll.min.js",
-              "bower_components/fastclick/lib/fastclick.js",
-              "bower_components/admin-lte/dist/js/adminlte.min.js"
+              "adminlte/plugins/jquery/jquery.min.js",
+              "adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+              "adminlte/dist/js/adminlte.min.js"
             ]
           },
           "configurations": {
